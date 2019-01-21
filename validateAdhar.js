@@ -61,176 +61,22 @@
 		return (c === 0);
 	}
 	
-	function validate_adhar(array) {
+	function validate_adhar(adhar) {
 		console.clear();
-		var adhar2 = document.getElementById("adhar_input").value;
-		if (adhar2 >= 100000000000 && adhar2 <= 999999999999) {
+		
+		if (adhar >= 100000000000 && adhar <= 999999999999) {
+			
 			if(validate(array) == false) {
-				document.getElementById("adhar_input").style.background = "#ff8282";
-				document.getElementById("text").innerHTML = "Invalid Adhar Number.";
-				console.log(false);
+				console.log("Invalid Adhar Number");
 				return false;
 			}
 			else {
-				document.getElementById("adhar_input").style.background = "lightgreen";
-				document.getElementById("text").innerHTML = "Valid Adhar Number.";
-				console.log(true);
 				return true;
 			}
 		}
 		else {
-			document.getElementById("adhar_input").style.background = "#ff8282";
-			document.getElementById("text").innerHTML = "Adhar Number should be 12 Digits.";
-			console.log(false);
+			console.log("Adhar Number Should Be 12 Digits");
 			return false;
 		}
 	}
 	
-	function predict_digit() {
-		console.clear();
-		var adhar3 = document.getElementById("adhar_input2").value;
-			if (adhar3 >= 10000000000 && adhar3 <= 99999999999) {	
-				adhar3 = adhar3 * 10;
-			
-				for(var i=1; i<11; i++) {
-						
-						if (validate(adhar3) == true) {
-							document.getElementById("text2").innerHTML = adhar3;
-							console.log(adhar3);
-						}
-						adhar3 = adhar3 + 1;
-				}
-				console.log(true);
-				return true;
-			}
-			else if (adhar3 >= 1000000000 && adhar3 <= 9999999999) {
-				adhar3 = adhar3 * 100;
-				var adhar = "000000000000";
-				var j=1;
-				var print_area = document.getElementById("print_area");
-				for(var i=1; i<101; i++) {
-						
-						if (validate(adhar3) == true) {
-							adhar[j] = adhar3;
-							console.log(adhar3);
-							j++;
-						}
-						adhar3 = adhar3 + 1;
-				}
-				console.log(true);
-				return true;
-			}
-			else if (adhar3 >= 100000000 && adhar3 <= 999999999) {
-				adhar3 = adhar3 * 1000;
-				var adhar = "000000000000";
-				var j=1;
-				var print_area = document.getElementById("print_area");
-				for(var i=1; i<1001; i++) {
-						
-						if (validate(adhar3) == true) {
-							adhar[j] = adhar3;
-							console.log(adhar3);
-							j++;
-						}
-						adhar3 = adhar3 + 1;
-				}
-				console.log(true);
-				return true;
-			}
-			else if (adhar3 >= 10000000 && adhar3 <= 99999999) {
-				adhar3 = adhar3 * 10000;
-				var adhar = "000000000000";
-				var j=1;
-				var print_area = document.getElementById("print_area");
-				for(var i=1; i<10001; i++) {
-						
-						if (validate(adhar3) == true) {
-							adhar[j] = adhar3;
-							console.log(adhar3);
-							j++;
-						}
-						adhar3 = adhar3 + 1;
-				}
-				console.log(true);
-				return true;
-			}
-			
-			else if (adhar3 >= 1000000 && adhar3 <= 9999999) {
-				adhar3 = adhar3 * 10000;
-				var adhar = "000000000000";
-				var j=1;
-				var print_area = document.getElementById("print_area");
-				for(var i=1; i<10001; i++) {
-						
-						if (validate(adhar3) == true) {
-							adhar[j] = adhar3;
-							console.log(adhar3);
-							j++;
-						}
-						adhar3 = adhar3 + 1;
-				}
-				console.log(true);
-				return true;
-			}
-			else if (adhar3 >= 100000 && adhar3 <= 999999) {
-				adhar3 = adhar3 * 100000;
-				var adhar = "000000000000";
-				var j=1;
-				var print_area = document.getElementById("print_area");
-				for(var i=1; i<100001; i++) {
-						
-						if (validate(adhar3) == true) {
-							adhar[j] = adhar3;
-							console.log(adhar3);
-							j++;
-						}
-						adhar3 = adhar3 + 1;
-				}
-				console.log(true);
-				return true;
-			}
-			else if (adhar3 >= 10000 && adhar3 <= 99999) {
-				adhar3 = adhar3 * 1000000;
-				var adhar = "000000000000";
-				var j=1;
-				var print_area = document.getElementById("print_area");
-				for(var i=1; i<1000001; i++) {
-						
-						if (validate(adhar3) == true) {
-							adhar[j] = adhar3;
-							console.log(adhar3);
-							j++;
-						}
-						adhar3 = adhar3 + 1;
-				}
-				console.log(true);
-				return true;
-			}
-			
-			else if (adhar3 >= 1000 && adhar3 <= 9999) {
-				adhar3 = adhar3 * 10000000;
-				var adhar = "000000000000";
-				var j=1;
-				var print_area = document.getElementById("print_area");
-				for(var i=1; i<10000001; i++) {
-						
-						if (validate(adhar3) == true) {
-							adhar[j] = adhar3;
-							console.log(adhar3);
-							j++;
-						}
-						adhar3 = adhar3 + 1;
-				}
-				console.log(true);
-				return true;
-			}
-			
-			
-			
-		
-			else {
-				console.error("Invalid Input");
-				console.log(false);
-				return false;
-			}
-		}
