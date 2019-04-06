@@ -11,7 +11,7 @@
       <div class="w3-container w3-center w3-black">
           <h1>Example for validateAdhar.js</h1>
       </div>
-      <div class="w3-container w3-center">
+      <div class="w3-container w3-margin w3-center">
           <input type="text" id="adharNo" placeholder="Enter Adhar Number" class="w3-input w3-border">
           <button onclick="ButtonClickValidate()">validate Adhar Number</button>
           <hr class="w3-opacity"/>
@@ -22,7 +22,7 @@
       <script>
           function ButtonClickValidate() {
               var adharNo = document.getElementById("adharNo").value;
-              if(validate_adhar(adharNo)) {
+              if(validate_adhar(adharNo) == true) {
                   document.getElementById("result").innerHTML="Valid Adhar Number"
               }
               else {
