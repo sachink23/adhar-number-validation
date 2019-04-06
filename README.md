@@ -1,4 +1,4 @@
-# adhar-number-validation
+# Adhar Number Validation Using Javascript
 Validate if Adhar Number is Correct or not using javascript
 
   - example : https://sachink23.github.io/adhar-number-validation/
