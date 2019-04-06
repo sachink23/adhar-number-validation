@@ -1,5 +1,8 @@
 # adhar-number-validation
 Validate if Adhar Number is Correct or not using javascript
+
+  - example : https://sachink23.github.io/adhar-number-validation/
+  
 How it works ?
   - Adhar number are generated using Verhoeff algorithm, so validateAdhar.js file first validates if the given number is a 12 digit number or not, if its a 12 digit number then it checks if number is a valid Verhoeff number or not.
 
@@ -12,3 +15,5 @@ How to use ?
 
 Note for noobs :
   - This file only validates the adhar number using Verhoeff algorithm, it doesn't verifies the adhar number.
+  
+ 
