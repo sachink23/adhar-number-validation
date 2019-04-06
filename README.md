@@ -9,7 +9,7 @@ How it works ?
 How to use ?
   - Insert the following script tag in the page.
 
-  - <script src="https://sachink23.github.io/adhar-number-validation/validateAdhar.js"></script>
+  - <script src="https://sachink23.github.io/adhar-number-validation/validateAdhar.js " ></script>
 
   - Use function validate_adhar(AdharNumber) wherever needed, when function returns true, then adhar number is valid, if it returns false adhar number is invalid.
 
