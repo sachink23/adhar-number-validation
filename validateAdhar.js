@@ -66,7 +66,7 @@
 		
 		if (adhar >= 100000000000 && adhar <= 999999999999) {
 			
-			if(validate(array) == false) {
+			if(validate(adhar) == false) {
 				console.log("Invalid Adhar Number");
 				return false;
 			}
