@@ -63,7 +63,7 @@
 	
 	function validate_adhar(adhar) {
 		console.clear();
-		
+		//pretty dumb but the easiest solution to know if the number is 12 digit or not :)
 		if (adhar >= 100000000000 && adhar <= 999999999999) {
 			
 			if(validate(adhar) == false) {
